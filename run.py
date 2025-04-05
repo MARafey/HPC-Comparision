@@ -113,10 +113,7 @@ def get_Insights(parallel, cpp_file, input_dir, num_runs=1):
                                 value = float(match.group(1))
                         else:
                             value = float(match.group(1))
-                            if parallel == 0:
-                                if value > 6:
-                                    value += 5
-                                value+=0.5
+                          
                         run_metrics[metric].append(value)
                     else:
                         run_metrics[metric].append(0)
